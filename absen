@@ -1,0 +1,14 @@
+<?php
+class Absensi {
+	public $nama, $nis, $rombel, $rayon;
+	public function cetakDataSiswa(){
+		return "$this->nama, $this->nis, $this->rombel, $this->rayon";
+	}
+}
+	$kehadiran = new Absensi();
+	$kehadiran->nama="Ilma Awaliah";
+	$kehadiran->nis="11907194";
+	$kehadiran->rombel="RPL XI-3";
+	$kehadiran->rayon="Tajur 4";
+
+	echo $kehadiran->cetakDataSiswa();
